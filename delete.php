@@ -4,7 +4,7 @@
 include("revesion/conn.php");
 
     $myId = $_GET['id'];
-    $sql ="delete from users set name = 'harry' where id= $myId";
+    $sql ="delete from users where id = $myId";
     $result = mysqli_query($connection ,$sql);
 
 if ($result == true) {
